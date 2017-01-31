@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
+// var multer = require('multer');
 
 var settings = require('./setting');
 var flash = require('connect-flash');
@@ -52,6 +53,13 @@ app.use(session(
     }
 ));
 
+//添加上传文件模块
+/*app.use(multer({
+    dest : './public/images/',
+    rename: function (fieldname, filename) {
+        return filename;
+    }
+}));*/
 
 
 

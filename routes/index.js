@@ -11,10 +11,29 @@ module.exports = router;*/
 var crypto = require('crypto');
 var User = require('../models/user');
 var Post = require('../models/post');
+var multer = require('multer');
+var storage = multer.diskStorage({
+  filename : function (req, file, cb) {
+    var type = file.originalname.slice(file.originalname.lastIndexOf('.'));
+    var newName = Date.now()+type;
+    console.log(newName);
+      cb(null, newName);
+  },
+    destination: function (req, file, cb) {
+        cb(null, 'uploads/')
+    },
+})
+var upload = multer({
+ /* dest : 'uploads/',*/
+   /* rename: function (fieldname, filename) {
+        return filename;
+    }*/
+   storage : storage
+})
 module.exports = function (app) {
   app.get('/', function (req, res) {
     console.log("user"+req.session.user);
-    Post.get(null, function (err, posts) {
+    Post.getAll(null, function (err, posts) {
       if(err){
         posts = [];
       }
@@ -148,6 +167,65 @@ module.exports = function (app) {
     req.flash('success', '登出成功');
     res.redirect('/');
   });
+  //上传文件模块
+    app.get('/upload', checkLogin);
+    app.get('/upload', function (req, res) {
+        res.render('upload',{
+          title : '文件上传',
+            user: req.session.user,
+            success: req.flash('success').toString(),
+            error: req.flash('error').toString()
+        })
+    });
+    app.post('/upload', checkLogin);
+    app.post('/upload', upload.single('file1'), function (req, res) {
+        req.flash('success', '文件上传成功');
+        res.redirect('/upload');
+    })
+    //获取用户文章页面
+    app.get('/u/:name', function (req, res) {
+        //检查用户是否存在
+        User.get(req.params.name, function (err, user) {
+           if(!user){
+             req.flash('error', '用户名不存在');
+             return res.redirect('/');
+           }
+           //查询并返回用户的所有文章
+            Post.getAll(user.name, function (err, posts) {
+                if(err){
+                  req.flash('error', err);
+                  return res.redirect('/');
+                };
+                res.render('user', {
+                  title : user.name,
+                    posts : posts,
+                    user : req.session.user,
+                    success : req.flash('success').toString(),
+                    error : req.flash('error').toString()
+                });
+            });
+        });
+    });
+    //文章页面的路由规则
+    app.get('/u/:name/:day/:title', function (req, res) {
+      console.log(req.params);
+        Post.getOne(req.params.name, req.params.day,req.params.title, function (err, post) {
+            if(err){
+              req.flash('error', err);
+              return res.redirect('/');
+            }
+            res.render('article', {
+                title : req.params.name,
+                post : post,
+                user : req.session.user,
+                success : req.flash('success').toString(),
+                error : req.flash('error').toString()
+            });
+        });
+    });
+
+
+
 
   //状态检查，已登录的不能访问登录和注册页面，直接跳到主页
   function checkLogin(req, res, next) {

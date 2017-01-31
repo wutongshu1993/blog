@@ -2,6 +2,8 @@
  * Created by lh on 2017/1/18.
  */
 var mongodb = require('./db');
+//使用markdown
+var markdown = require('markdown').markdown;
 function Post(name, title, post) {
     this.name = name;
     this.title = title;
@@ -53,7 +55,7 @@ Post.prototype.save = function (callback) {
     });
 }
 //读取文章及其相关信息
-Post.get = function(name, callback){
+Post.getAll = function(name, callback){
     //打开数据库
     mongodb.open(function (err, db) {
         if(err){
@@ -62,7 +64,7 @@ Post.get = function(name, callback){
         //读取post集合
         db.collection('posts', function (err, collection) {
             if(err){
-                mongodb.closr();
+                mongodb.close();
                 return callback(collection);
             }
             var query = {};
@@ -78,8 +80,40 @@ Post.get = function(name, callback){
                     return callback(err);
                 }
                 console.log(docs);
+                docs.forEach(function (doc) {
+                    doc.post = markdown.toHTML(doc.post);
+                })
                 callback(null, docs);//成功，以数组形式返回查询的结果
             });
         });
     });
+};
+//获取一篇文章
+Post.getOne = function (name, day, title, callback) {
+    mongodb.open(function (err, db) {
+        if(err){
+           return callback(err);
+        }
+        //读取post集合
+        db.collection('posts', function (err, collection) {
+            if (err){
+                mongodb.close();
+                return callback(err);
+            }
+            //根据用户名、发表日期和标题来查找
+            collection.findOne({//属性为什么会加引号呢？？
+                'name' : name,
+                'time.day' : day,
+                'title' : title
+            }, function (err, doc) {
+               mongodb.close();
+               if (err){
+                   return callback(err);
+               };
+               //解析markdown为html
+               doc.post = markdown.toHTML(doc.post);
+               callback(null, doc);//返回查询的一篇文章
+            })
+        })
+    })
 }

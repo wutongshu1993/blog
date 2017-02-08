@@ -1,0 +1,10 @@
+<%-include header.ejs%>
+<form method="post" >
+    标题：<br>
+    <input type="text" disabled="disabled" name="title" value="<%=post.title%>"><br>
+    正文：<br>
+    <textarea cols="100" rows="20" name="post" ><%=post.post%></textarea>
+    <button type="submit">保存修改</button>
+
+</form>
+<%-include footer.ejs%>

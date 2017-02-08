@@ -28,7 +28,8 @@ Post.prototype.save = function (callback) {
         name: this.name,
         time : time,
         title : this.title,
-        post : this.post
+        post : this.post,
+        comments : []
     };
     //打开数据库
     mongodb.open(function (err, db) {
@@ -111,9 +112,100 @@ Post.getOne = function (name, day, title, callback) {
                    return callback(err);
                };
                //解析markdown为html
-               doc.post = markdown.toHTML(doc.post);
+                //添加评论的功能,将评论也显示为html的方式
+                if(doc){
+                    doc.post = markdown.toHTML(doc.post);
+                    doc.comments.forEach(function (comment) {
+                        comment.content = markdown.toHTML(comment.content);//每个comment都有一个字段叫做content
+                    })
+                }
+
                callback(null, doc);//返回查询的一篇文章
             })
         })
     })
+}
+//以markdown格式返回原始发送的内容
+Post.edit = function (name, day, title, callback) {
+    mongodb.open(function (err, db) {
+        if(err){
+            return callback(err);
+        }
+        //读取post集合
+        db.collection('posts', function (err, collection) {
+            if(err){
+                mongodb.close();
+                return callback(err);
+            }
+            //根据用户名，日期和标题查找
+            collection.findOne({
+                'name': name,
+                'time.day' : day,
+                'title': title
+            }, function (err, doc) {
+                mongodb.close();
+                if(err){
+                    return callback(err);
+                }
+                // doc.post = markdown.toHTML(doc.post);
+                callback(null, doc);
+            })
+        })
+    });
+};
+//更新博客内容
+Post.update = function (name, day, title,post, callback) {
+    mongodb.open(function (err, db) {
+        if(err){
+            return callback(db);
+        }
+        db.collection("posts", function (err, collection) {
+            if(err){
+                mongodb.close();
+                callback(err);
+            }
+            collection.update({
+                'name':name,
+                'time.day':day,
+                'title':title
+            },{
+                $set:{
+                    'post':post
+                }
+            },function (err) {
+                mongodb.close();
+                if(err){
+                    return callback(err);
+                }
+                callback(null);
+            });
+        });
+    });
+};
+//删除某篇文章
+Post.delete = function (name, day, title, callback) {
+    mongodb.open(function (err, db) {
+        if(err){
+           return callback(err);
+        }
+        db.collection("posts",function (err, collection ) {
+            if(err){
+                mongodb.close();
+                return callback(err);
+            }
+            collection.remove({
+                'name':name,
+                'time.day':day,
+                'title': title
+            },{
+                w:1
+            }, function (err) {
+                mongodb.close();
+                if(err){
+                   return  callback(err);
+                }
+               callback(null);
+            });
+        });
+    });
 }

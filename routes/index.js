@@ -12,9 +12,10 @@ var crypto = require('crypto');
 var User = require('../models/user');
 var Post = require('../models/post');
 var multer = require('multer');
+var Comment = require('../models/comment');
 var storage = multer.diskStorage({
   filename : function (req, file, cb) {
-    var type = file.originalname.slice(file.originalname.lastIndexOf('.'));
+    var type = file.originalname.slice(file.originalname.lastIndexOf('.'));//截取后缀
     var newName = Date.now()+type;
     console.log(newName);
       cb(null, newName);
@@ -223,6 +224,74 @@ module.exports = function (app) {
             });
         });
     });
+    //注册文章的留言响应
+    app.post('/u/:name/:day/:title', function (req, res) {
+        var date = new Date(),
+            time = date.getFullYear()+'-'+date.getMonth()+1+'-'+date.getDate()+' '+date.getHours()
+                +':'+ (date.getMinutes() < 10 ? '0'+date.getMinutes():date.getMinutes());
+        var comment = {
+            name: req.body.name,
+            email: req.body.email,
+            website: req.body.website,
+            time: time,
+            content: req.body.content
+        };
+        var newComment = new Comment(req.params.name, req.params.day, req.params.title, comment);
+        newComment.save(function (err) {
+            if(err){
+              req.flash('err', err);
+              return res.redirect('back');
+            }
+            req.flash('success', '留言成功');
+            res.redirect('back');
+        });
+
+    });
+
+    //编辑文章页面
+    app.get('/edit/:name/:day/:title', checkLogin);
+    app.get('/edit/:name/:day/:title', function(req, res){
+      var curUser = req.session.user;//注意，这里的curUser和请求的name不一定相同，有可能是点了别人的文章
+      Post.edit(req.params.name, req.params.day, req.params.title, function (err, post) {
+        if(err){
+            req.flash('error', err);
+            return res.redirect('/');
+          }
+          res.render('edit', {
+              title: "编辑",
+              post: post,
+              user : curUser,
+              success : req.flash('success').toString(),
+              error : req.flash('error').toString()
+          });
+      });
+    });
+    app.post('/edit/:name/:day/:title', checkLogin);
+    app.post('/edit/:name/:day/:title', function (req, res) {
+        Post.update(req.params.name, req.params.day, req.params.title, req.body.post,function (err) {
+           var url = encodeURI('/u/'+req.params.name+'/'+req.params.day+'/'+req.params.title);
+           if(err){
+             req.flash('error', err);
+             return res.redirect(url);//出错，返回文章首页
+           }
+           req.flash('success', '修改成功');
+           res.redirect(url);//成功，返回文章首页
+        })
+    });
+    
+    //删除文章
+    app.get('/remove/:name/:day/:title', checkLogin);
+    app.get('/remove/:name/:day/:title', function (req, res) {
+        Post.delete(req.params.name, req.params.day, req.params.title, function (err) {
+            if(err){
+              req.flash('error', err);
+              return res.redirect('back');
+            }
+            req.flash('success', '删除成功');
+            res.redirect('/');
+        })
+    });
+    
 
 
 

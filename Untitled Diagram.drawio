@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-07-21T01:45:24.223Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="DtxKUhwjCAFKjXwPYx0O" version="14.9.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-21T02:26:19.408Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="YlDD26o0crrTRMCf4BPJ" version="14.9.0" type="github">
   <diagram id="T_NaOF4HCSvs0rHXY1GS" name="Page-1">
-    <mxGraphModel dx="2952" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2952" dy="834" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -111,6 +111,47 @@
         </mxCell>
         <mxCell id="0hItoibZD7xrab0cP2cv-32" value="......" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-300" y="300" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0hItoibZD7xrab0cP2cv-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0hItoibZD7xrab0cP2cv-34" target="0hItoibZD7xrab0cP2cv-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0hItoibZD7xrab0cP2cv-34" value="" style="shape=loopLimit;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1197" y="820" width="287" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="0hItoibZD7xrab0cP2cv-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0hItoibZD7xrab0cP2cv-36" target="0hItoibZD7xrab0cP2cv-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0hItoibZD7xrab0cP2cv-36" value="读取分库信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1103" y="650" width="99" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0hItoibZD7xrab0cP2cv-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0hItoibZD7xrab0cP2cv-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1053.5" y="819.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0hItoibZD7xrab0cP2cv-38" value="&lt;span&gt;计算总预算所在的DB及分桶数&lt;/span&gt;&lt;br&gt;&lt;span&gt;创建总预算记录&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1143" y="730" width="179" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0hItoibZD7xrab0cP2cv-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0hItoibZD7xrab0cP2cv-40" target="0hItoibZD7xrab0cP2cv-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0hItoibZD7xrab0cP2cv-40" value="创建" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1092.25" y="470" width="79" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0hItoibZD7xrab0cP2cv-41" value="循环遍历分库" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1033.5" y="790" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0hItoibZD7xrab0cP2cv-42" value="创建子预算记录" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1109.5" y="850" width="112" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0hItoibZD7xrab0cP2cv-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0hItoibZD7xrab0cP2cv-44" target="0hItoibZD7xrab0cP2cv-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0hItoibZD7xrab0cP2cv-44" value="预算创建者ID&lt;br&gt;预算总数&lt;br&gt;预算份数&lt;br&gt;外部业务号" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-1109.5" y="540" width="113.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0hItoibZD7xrab0cP2cv-45" value="结束" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1093" y="960" width="79" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

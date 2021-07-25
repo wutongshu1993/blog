@@ -1,9 +1,25 @@
-<mxfile host="app.diagrams.net" modified="2021-07-24T12:53:51.476Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="0-VeKsTvJvu9vUgxca2y" version="14.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-25T10:15:45.103Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="m6Ly-VkjsvEuOToCOihz" version="14.5.3" type="github">
   <diagram id="T_NaOF4HCSvs0rHXY1GS" name="Page-1">
-    <mxGraphModel dx="3832" dy="796" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3594" dy="655" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-280" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;fontSize=12;dashed=1;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-263" target="lw3RVbSvmaLZlQFikR0A-249">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-927" y="2734" />
+              <mxPoint x="-1188" y="2734" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-281" value="事务执行失败" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="lw3RVbSvmaLZlQFikR0A-280">
+          <mxGeometry x="0.1127" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-263" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="-1055" y="2795.5" width="171" height="189" as="geometry" />
+        </mxCell>
         <mxCell id="lw3RVbSvmaLZlQFikR0A-244" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=1;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="-574" y="3564.5" width="163" height="105.5" as="geometry" />
         </mxCell>
@@ -711,7 +727,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="0hItoibZD7xrab0cP2cv-234" value="扣减流水初始化" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="-815" y="2734.5" width="90" height="41" as="geometry" />
+          <mxGeometry x="-823" y="2734.5" width="90" height="41" as="geometry" />
         </mxCell>
         <mxCell id="0hItoibZD7xrab0cP2cv-251" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="0hItoibZD7xrab0cP2cv-245" target="0hItoibZD7xrab0cP2cv-250" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -877,7 +893,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="0hItoibZD7xrab0cP2cv-301" value="扣减流水成功" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="-805" y="2659.5" width="90" height="41" as="geometry" />
+          <mxGeometry x="-823" y="2659.5" width="90" height="41" as="geometry" />
         </mxCell>
         <mxCell id="0hItoibZD7xrab0cP2cv-307" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="0hItoibZD7xrab0cP2cv-303" target="0hItoibZD7xrab0cP2cv-306" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -1250,7 +1266,7 @@
         <mxCell id="lw3RVbSvmaLZlQFikR0A-129" value="..........." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-1086" y="1586" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="lw3RVbSvmaLZlQFikR0A-130" value="DB30" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-130" value="主" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="-1156" y="1481" width="60" height="50" as="geometry" />
         </mxCell>
         <mxCell id="lw3RVbSvmaLZlQFikR0A-131" value="..........." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -1378,8 +1394,8 @@
         <mxCell id="lw3RVbSvmaLZlQFikR0A-235" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-231" target="lw3RVbSvmaLZlQFikR0A-232">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="lw3RVbSvmaLZlQFikR0A-231" value="生成初始化扣减流水" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#82b366;strokeWidth=1;fillColor=#d5e8d4;" vertex="1" parent="1">
-          <mxGeometry x="-724" y="3518" width="120" height="35" as="geometry" />
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-231" value="生成初始化/冻结&lt;br&gt;扣减流水" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#82b366;strokeWidth=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="-725" y="3518" width="121" height="35" as="geometry" />
         </mxCell>
         <mxCell id="lw3RVbSvmaLZlQFikR0A-236" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-232" target="lw3RVbSvmaLZlQFikR0A-233">
           <mxGeometry relative="1" as="geometry" />
@@ -1422,6 +1438,186 @@
         </mxCell>
         <mxCell id="lw3RVbSvmaLZlQFikR0A-246" value="事务提交成功" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="-545" y="3680" width="107" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-249" value="" style="shape=loopLimit;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1353" y="2795.5" width="220" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-250" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="-1332" y="2852" width="168" height="117" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-251" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-252" target="lw3RVbSvmaLZlQFikR0A-254">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-252" value="主预算生成初始化扣减流水（扣减金额为0）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-1310.5" y="2686.5" width="125" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-253" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-254" target="lw3RVbSvmaLZlQFikR0A-256">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-254" value="从预算生成转移流水（转移金额为余额）" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1308" y="2804" width="120" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-255" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-256" target="lw3RVbSvmaLZlQFikR0A-258">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-256" value="从预算更新为0" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1308" y="2861" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-257" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-258" target="lw3RVbSvmaLZlQFikR0A-262">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-258" value="从预算转移流水&lt;br&gt;设为成功" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1308" y="2922" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-260" value="&lt;font color=&quot;#ff3333&quot;&gt;事务&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1204" y="2897" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-275" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;fontSize=12;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-262" target="lw3RVbSvmaLZlQFikR0A-266">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-262" value="累加转移金额" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1308" y="2982" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-265" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-266" target="lw3RVbSvmaLZlQFikR0A-268">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-266" value="主预算增加余额" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-1039.5" y="2807.5" width="120" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-276" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;fontSize=12;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-268" target="lw3RVbSvmaLZlQFikR0A-272">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-268" value="更新主预算扣减流水成功" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-1048" y="2864.5" width="137" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-270" value="&lt;font color=&quot;#ff3333&quot;&gt;事务&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-921" y="2853.5" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-271" value="遍历所有从库" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1332" y="2769" width="92" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-272" value="主预算更新为已合并" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-1039.5" y="2927.5" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-283" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-247.5" y="2858.5" width="45" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-284" value="" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-255" y="2890.5" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-285" value="主预算转移流水状态" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-188" y="2891.5" width="118" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-286" value="从预算扣减流水状态" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-193" y="2859.5" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-288" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-292" target="lw3RVbSvmaLZlQFikR0A-296">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-658" y="3826" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-289" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-292" target="lw3RVbSvmaLZlQFikR0A-300">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-754" y="3839.5" />
+              <mxPoint x="-754" y="3899.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-290" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-292" target="lw3RVbSvmaLZlQFikR0A-307">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-291" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-292" target="lw3RVbSvmaLZlQFikR0A-302">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-754" y="3866.5" />
+              <mxPoint x="-438" y="3866.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-292" value="合并流水初始化" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-807" y="3805" width="90" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-293" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-294" target="lw3RVbSvmaLZlQFikR0A-297">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-364" y="3825" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-294" value="扣减流水失败" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-498" y="3804" width="90" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-295" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-296" target="lw3RVbSvmaLZlQFikR0A-294">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-296" value="无转移流水" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-663" y="3805" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-297" value="返回失败" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-354" y="3815" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-298" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-300" target="lw3RVbSvmaLZlQFikR0A-302">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-494" y="3898" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-299" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-300" target="lw3RVbSvmaLZlQFikR0A-307">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-300" value="转移流水初始化" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-658" y="3879" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-302" target="lw3RVbSvmaLZlQFikR0A-304">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-302" value="转移流水成功" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-498" y="3879" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-303" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-304">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-204" y="3898.4999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-304" value="扣减流水成功" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-334" y="3878" width="90" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-305" value="返回成功" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="3888" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-306" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-307" target="lw3RVbSvmaLZlQFikR0A-309">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-307" value="转移流水失败" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-658" y="3942.5" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-308" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-309" target="lw3RVbSvmaLZlQFikR0A-310">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-309" value="扣减流水失败" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-487" y="3941.5" width="90" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-310" value="返回失败" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-339" y="3952" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-311" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-231.5" y="3929" width="45" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-312" value="" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-239" y="3961" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-313" value="主预算转移流水状态" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-172" y="3962" width="118" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-314" value="从预算扣减流水状态" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-177" y="3930" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-317" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=classic;endFill=1;fontSize=12;" edge="1" parent="1" source="lw3RVbSvmaLZlQFikR0A-315" target="lw3RVbSvmaLZlQFikR0A-316">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-315" value="无合并流水" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-807" y="3748" width="90" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="lw3RVbSvmaLZlQFikR0A-316" value="继续合并流程" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;strokeWidth=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="-679" y="3751" width="120" height="35" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

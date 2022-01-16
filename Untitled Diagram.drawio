@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-16T12:28:32.499Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36" etag="LcKITg2JOG1GHmwzjj8z" version="14.9.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-01-16T13:39:47.873Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36" etag="LEF78dJIjIPNzODy-ZcO" version="14.9.7" type="github" pages="2">
   <diagram id="T_NaOF4HCSvs0rHXY1GS" name="Page-1">
-    <mxGraphModel dx="3427" dy="557" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3022" dy="318" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2803,6 +2803,44 @@
         </mxCell>
         <mxCell id="xIyIGRmYpLKhy5yNx3tu-81" value="..." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry x="-1152" y="3768" width="20" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="xIyIGRmYpLKhy5yNx3tu-83" value="主预算" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="104" width="69" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xIyIGRmYpLKhy5yNx3tu-84" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="xIyIGRmYpLKhy5yNx3tu-85" target="xIyIGRmYpLKhy5yNx3tu-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xIyIGRmYpLKhy5yNx3tu-90" value="扣减预算" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xIyIGRmYpLKhy5yNx3tu-84">
+          <mxGeometry x="-0.1991" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xIyIGRmYpLKhy5yNx3tu-85" value="用户" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-799" y="65" width="25" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="xIyIGRmYpLKhy5yNx3tu-86" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=37.5;entryPerimeter=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="xIyIGRmYpLKhy5yNx3tu-87" target="xIyIGRmYpLKhy5yNx3tu-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xIyIGRmYpLKhy5yNx3tu-91" value="扣减预算" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xIyIGRmYpLKhy5yNx3tu-86">
+          <mxGeometry x="-0.4282" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xIyIGRmYpLKhy5yNx3tu-87" value="用户" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-801" y="132" width="25" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="xIyIGRmYpLKhy5yNx3tu-88" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=-15;entryPerimeter=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="xIyIGRmYpLKhy5yNx3tu-89" target="xIyIGRmYpLKhy5yNx3tu-83">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-670" y="205.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xIyIGRmYpLKhy5yNx3tu-93" value="扣减预算" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xIyIGRmYpLKhy5yNx3tu-88">
+          <mxGeometry x="-0.2713" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xIyIGRmYpLKhy5yNx3tu-89" value="用户" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-799" y="201" width="25" height="38" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

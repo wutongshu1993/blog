@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-17T12:17:18.172Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="Y0d9pVdi-xjBgMwHoWPg" version="14.9.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-01-17T12:19:14.665Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="k6uRE1O-CJ6_hDLURX29" version="14.9.7" type="github" pages="2">
   <diagram id="T_NaOF4HCSvs0rHXY1GS" name="Page-1">
     <mxGraphModel dx="3662" dy="627" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -3054,7 +3054,7 @@
         <mxCell id="n4c5-jm2DthY6YkbCvsH-15" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;fontColor=#5C5C5C;strokeColor=#000099;strokeWidth=1;fillColor=#21C0A5;" edge="1" parent="nDDcvXyqaJl87cMxIVsc-1" source="n4c5-jm2DthY6YkbCvsH-1" target="n4c5-jm2DthY6YkbCvsH-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="n4c5-jm2DthY6YkbCvsH-1" value="&lt;font style=&quot;font-size: 14px&quot;&gt;QQ钱包支付&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fontColor=#ffffff;strokeColor=#001DBC;fillColor=#0050ef;" vertex="1" parent="nDDcvXyqaJl87cMxIVsc-1">
+        <mxCell id="n4c5-jm2DthY6YkbCvsH-1" value="&lt;font style=&quot;font-size: 14px&quot;&gt;QQ / WX支付&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;fontColor=#ffffff;strokeColor=#001DBC;fillColor=#0050ef;" vertex="1" parent="nDDcvXyqaJl87cMxIVsc-1">
           <mxGeometry x="365" y="160" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="n4c5-jm2DthY6YkbCvsH-10" value="账单成功" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/databases.svg;rounded=0;sketch=0;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;" vertex="1" parent="nDDcvXyqaJl87cMxIVsc-1">

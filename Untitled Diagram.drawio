@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-17T08:25:13.914Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="47D-1MTXLUIgD8YOhKJd" version="14.9.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-01-17T08:26:38.638Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="ShtDuLrZHHWDxfo8Xb_u" version="14.9.7" type="github" pages="2">
   <diagram id="T_NaOF4HCSvs0rHXY1GS" name="Page-1">
     <mxGraphModel dx="3906" dy="757" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2954,7 +2954,7 @@
         <mxCell id="ejKsRAqsJSKaKwiFzq6h-40" value="&lt;span&gt;辅助修复&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-1918.5" y="1440.75" width="96" height="29" as="geometry" />
         </mxCell>
-        <mxCell id="ejKsRAqsJSKaKwiFzq6h-41" value="异常报警" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="ejKsRAqsJSKaKwiFzq6h-41" value="系统报警" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-1918.5" y="1489.25" width="96" height="29" as="geometry" />
         </mxCell>
       </root>

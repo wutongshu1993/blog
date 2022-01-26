@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-26T07:51:37.345Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="dohbP_1OURi5YtDLzM9R" version="16.2.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-01-26T12:01:20.762Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="6y-SuMW7z8i3bQgx_j18" version="16.2.7" type="github" pages="2">
   <diagram id="T_NaOF4HCSvs0rHXY1GS" name="Page-1">
-    <mxGraphModel dx="3779" dy="777" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3563" dy="648" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3063,6 +3063,61 @@
         </mxCell>
         <mxCell id="QobFsMMnjnk9przR8up6-47" value="机房2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-494.25" y="4630" width="41" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-62" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=15;entryPerimeter=0;" edge="1" parent="1" source="QobFsMMnjnk9przR8up6-58" target="QobFsMMnjnk9przR8up6-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-63" value="1. 初始化订单" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QobFsMMnjnk9przR8up6-62">
+          <mxGeometry x="-0.2132" y="2" relative="1" as="geometry">
+            <mxPoint x="12" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-66" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=15;exitPerimeter=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="QobFsMMnjnk9przR8up6-58" target="QobFsMMnjnk9przR8up6-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-67" value="3. 转账到wx/qq钱包" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QobFsMMnjnk9przR8up6-66">
+          <mxGeometry x="0.13" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-68" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=35;entryPerimeter=0;" edge="1" parent="1" source="QobFsMMnjnk9przR8up6-58" target="QobFsMMnjnk9przR8up6-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-69" value="5. 更新订单状态" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QobFsMMnjnk9przR8up6-68">
+          <mxGeometry x="-0.4503" y="1" relative="1" as="geometry">
+            <mxPoint x="27" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-70" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QobFsMMnjnk9przR8up6-58" target="QobFsMMnjnk9przR8up6-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-73" value="4. 扣减资金" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QobFsMMnjnk9przR8up6-70">
+          <mxGeometry x="-0.3854" y="1" relative="1" as="geometry">
+            <mxPoint x="1" y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-71" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QobFsMMnjnk9przR8up6-58" target="QobFsMMnjnk9przR8up6-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-72" value="2. 冻结资金" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QobFsMMnjnk9przR8up6-71">
+          <mxGeometry x="-0.0073" y="1" relative="1" as="geometry">
+            <mxPoint x="-2" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-58" value="提现中心" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;strokeWidth=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-2242" y="2068" width="88" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-59" value="账务中心" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;strokeWidth=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-2242.5" y="2191" width="88" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-60" value="账单中心" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;strokeWidth=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-2034.0000000000002" y="2066" width="88" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-61" value="资金通道" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;strokeWidth=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-2479" y="2071" width="88" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="QobFsMMnjnk9przR8up6-74" value="kafka" style="shape=cloud;whiteSpace=wrap;html=1;rounded=0;sketch=0;fontColor=#ffffff;strokeColor=#001DBC;fillColor=#0050ef;" vertex="1" parent="1">
+          <mxGeometry x="-2364" y="2158" width="92" height="62" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

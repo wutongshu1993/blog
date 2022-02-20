@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-19T13:50:35.517Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="vPqIqyyzzPW9A-l3vs6V" version="16.4.5" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-02-20T09:35:28.188Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="qupe99kaNBM7wpHFd7a1" version="16.4.5" type="github" pages="2">
   <diagram id="T_NaOF4HCSvs0rHXY1GS" name="Page-1">
-    <mxGraphModel dx="3112" dy="409" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3238" dy="491" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3128,7 +3128,7 @@
         <mxCell id="egnLraTYf36gFUN8_gVL-4" value="C2C 红包发奖中心" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="-1544.5" y="3972.5" width="117" height="33" as="geometry" />
         </mxCell>
-        <mxCell id="egnLraTYf36gFUN8_gVL-5" value="交易中心" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;" parent="1" vertex="1">
+        <mxCell id="egnLraTYf36gFUN8_gVL-5" value="交易中心" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="-1209.25" y="3970.26" width="117" height="33" as="geometry" />
         </mxCell>
         <mxCell id="egnLraTYf36gFUN8_gVL-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
